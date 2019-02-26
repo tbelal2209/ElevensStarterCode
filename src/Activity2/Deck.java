@@ -1,10 +1,7 @@
-package Activity2;
-
 /**
  * Created by Teacher on 1/7/2019.
  */
 import java.util.List;
-import java.util.ArrayList;
 
 /**
  * The Deck class represents a shuffled deck of cards.
@@ -35,7 +32,7 @@ public class Deck {
      * @param values is an array containing all of the card point values.
      */
     public Deck(String[] ranks, String[] suits, int[] values) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+
     }
 
 
@@ -43,7 +40,7 @@ public class Deck {
      * Determines if this deck is empty (no undealt cards).
      * @return true if this deck is empty, false otherwise.
      */
-    public boolean isEmpty() {
+    public void isEmpty() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
     }
 
@@ -51,7 +48,7 @@ public class Deck {
      * Accesses the number of undealt cards in this deck.
      * @return the number of undealt cards in this deck.
      */
-    public int size() {
+    public void size() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
     }
 
@@ -68,7 +65,7 @@ public class Deck {
      * @return the card just dealt, or null if all the cards have been
      *         previously dealt.
      */
-    public Card deal() {
+    public void deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
     }
 
@@ -84,11 +81,13 @@ public class Deck {
             rtn = rtn + cards.get(k);
             if (k != 0) {
                 rtn = rtn + ", ";
+
             }
             if ((size - k) % 2 == 0) {
                 // Insert carriage returns so entire deck is visible on console.
                 rtn = rtn + "\n";
             }
+
         }
 
         rtn = rtn + "\nDealt cards: \n";
@@ -107,4 +106,6 @@ public class Deck {
         return rtn;
     }
 }
+
+
 
